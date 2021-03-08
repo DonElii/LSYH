@@ -1,6 +1,7 @@
 /*
  * This test case verifies the end to end workflow (till Application/Registration page) for a randomly selected Szeged based Software Tester position.
  * @author: Zoltán Liptai (example ID: ABC123)
+ * @testing tool: Selenium-java-4.0.0-alpha-7
  * @ide: IntelliJ IDEA v2020.2.3
  * @framework: JUnit v4.13
  */
