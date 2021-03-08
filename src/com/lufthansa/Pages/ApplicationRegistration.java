@@ -7,13 +7,12 @@
 package com.lufthansa.Pages;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
+import static org.junit.Assert.assertTrue;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
-import static org.junit.Assert.assertTrue;
 
 
 public class ApplicationRegistration {
@@ -21,7 +20,6 @@ public class ApplicationRegistration {
     WebDriver driver;
 
     By title_text = By.xpath("//h1[contains(.,\'Application / Registration')]");
-    By description_text = By.xpath("//h2[contains(.,\'Would you like to join us as Test Automation Engineer - Szeged? ')]");
 
 
     public ApplicationRegistration(WebDriver driver) {
@@ -48,17 +46,7 @@ public class ApplicationRegistration {
     //asserting if the title = parameter (input_text)
     {
         String toText = driver.findElement(title_text).getText();
-        assertTrue(toText.contains(input_text));
+        assertTrue("title of the page in 'h1': 'Application / Registration' ", toText.contains(input_text));
 
     }
-
-    public void descriptionText(String input_description)
-    //captures the description of Application / Registration page
-    //asserting if the description = parameter (input_description)
-    //optional message also added before the condition
-    {
-        String toText = driver.findElement(description_text).getText();
-        assertTrue("Description contains: Would you like to join us as Test Automation Engineer - Szeged?", toText.contains(input_description));
-    }
-
 }

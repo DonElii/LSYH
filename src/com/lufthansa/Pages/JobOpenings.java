@@ -7,13 +7,12 @@
 package com.lufthansa.Pages;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import static org.junit.Assert.assertTrue;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
-import static org.junit.Assert.assertTrue;
+import java.util.concurrent.TimeUnit;
+import org.openqa.selenium.WebElement;
 
 
 public class JobOpenings
@@ -36,7 +35,6 @@ public class JobOpenings
     By dev = By.xpath("//input[@value='Software Development']");
     By ued = By.xpath("//input[@value='User Experience and Design']");
 
-    By position1 = By.xpath("//a[@id='description_cart_2283']");
 
     public JobOpenings(WebDriver driver)
     {
@@ -57,33 +55,6 @@ public class JobOpenings
         String title = driver.getTitle();
         assertTrue("Title is: Job openings - Lufthansa System Hungária",(title.contains("Job openings - Lufthansa System Hungária")));
     }
-
-/*
-    public void FilltheForm(String Szeged,String testing, String position1)
-    //Fill the form in one go
-    {
-        driver.findElement(Szeged).click();
-        try {
-            Thread.sleep(1000);
-        }
-        catch(InterruptedException ie){
-        }
-
-        driver.findElement(testing).click();
-        try {
-            Thread.sleep(1000);
-        }
-        catch(InterruptedException ie){
-        }
-
-        driver.findElement(position1).click();
-        try {
-            Thread.sleep(1000);
-        }
-        catch(InterruptedException ie){
-        }
-    }
-*/
 
 
     public void selectLocation(String loc)
@@ -161,9 +132,4 @@ public class JobOpenings
 
     }
 
-
-    public void clickOnPosition()
-    {
-        driver.findElement(position1).click();
-    }
 }
