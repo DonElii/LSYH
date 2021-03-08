@@ -43,7 +43,7 @@ public class RandomTesterPosition {
                 System.out.println("Open position found. Proceeding to application");
                 item.click();
             } else {
-                System.out.println("No open positions found matching with criteria");
+                System.out.println("No open position found with matching criteria");
             }
     }
 
