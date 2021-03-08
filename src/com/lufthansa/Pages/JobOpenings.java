@@ -78,7 +78,7 @@ public class JobOpenings
                 System.out.println("Budapest & Szeged selected");
                 break;
             default:
-                System.out.println("Location filter hasn't been selected");
+                System.out.println("Location selected wrongly, please select 'Szeged', 'Budapest' 'BpSzeged' ");
                 break;
         }
 
@@ -126,7 +126,7 @@ public class JobOpenings
                 System.out.println("User Experience and Design selected");
                 break;
             default:
-                System.out.println("Category filter hasn't been selected");
+                System.out.println("Category selected wrongly / No open position for selection");
                 break;
         }
 

@@ -37,7 +37,14 @@ public class RandomTesterPosition {
         Random random = new Random();
 
         int num = random.nextInt(div_elements.size());
-        div_elements.get(num).click();
+
+            WebElement item = div_elements.get(num);
+            if (item.isDisplayed()) {
+                System.out.println("Open position found. Proceeding to application");
+                item.click();
+            } else {
+                System.out.println("No open positions found matching with criteria");
+            }
     }
 
 
