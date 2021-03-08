@@ -1,5 +1,5 @@
 /*
- * This test case verifies the workflow till Application/Registration page for a randomly selected Szeged based Software Testing position.
+ * This test case verifies the end to end workflow (till Application/Registration page) for a randomly selected Szeged based Software Tester position.
  * @author: Zoltán Liptai (example ID: ABC123)
  * @ide: IntelliJ IDEA v2020.2.3
  * @framework: JUnit v4.13
@@ -31,7 +31,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.openqa.selenium.By;
 
 
-public class ApplyToPosition {
+public class ApplyToPosition_E2E {
 
     WebDriver driver;
     Map<String, Object> vars;

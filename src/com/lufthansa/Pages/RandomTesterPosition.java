@@ -1,5 +1,5 @@
 /*
- * This class stores all the locators and methods of any randomly selected Szeged based Tester job.
+ * This class stores all the locators and methods of any randomly selected Szeged based Software Tester position.
  * @url: any opened Tester jobs in Szeged: https://job.lhsystems.hu/en/job-offers?Y2l0aWVzJTVCJTVEJTNEU3plZ2VkJTI2c3BlY2lhbGl0aWVzJTVCJTVEJTNEU29mdHdhcmUlMjB0ZXN0aW5nJTI2#!
  *
  */
