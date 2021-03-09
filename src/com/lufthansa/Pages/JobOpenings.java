@@ -126,7 +126,7 @@ public class JobOpenings
                 System.out.println("User Experience and Design selected");
                 break;
             default:
-                System.out.println("Category selected wrongly / No open position for selection");
+                System.out.println("Category selected wrongly");
                 break;
         }
 
